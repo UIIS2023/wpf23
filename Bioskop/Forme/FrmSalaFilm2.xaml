@@ -1,0 +1,17 @@
+﻿<Window x:Class="Bioskop.Forme.FrmSalaFilm2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bioskop.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni salu i film" Height="350" Width="400">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Sala:" HorizontalAlignment="Left" Margin="30,81,0,0" VerticalAlignment="Top" />
+        <ComboBox x:Name="cbSala" HorizontalAlignment="Left" Margin="130,81,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Info" SelectedValuePath="salaID" SelectionChanged="cbSala_SelectionChanged"/>
+        <Label Content="Film:" HorizontalAlignment="Left" Margin="29,38,0,0" VerticalAlignment="Top" />
+        <ComboBox x:Name="cbFilm" HorizontalAlignment="Left" Margin="130,38,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Info" SelectedValuePath="filmID"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="67,200,0,0" VerticalAlignment="Top" Width="75" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Width="76" Click="btnOtkazi_Click"/>
+    </Grid>
+</Window>

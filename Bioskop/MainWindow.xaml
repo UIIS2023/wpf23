@@ -1,0 +1,33 @@
+﻿<Window x:Class="Bioskop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bioskop"
+        mc:Ignorable="d"
+        Title="Bioskop" Height="500" Width="800">
+    <Grid>
+        <DataGrid Name="dataGridCentralni" HorizontalAlignment="Center" VerticalAlignment="Center" Height="230" Width="Auto" IsReadOnly="True"
+                  AlternatingRowBackground="LightPink" CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single"/>
+        <StackPanel HorizontalAlignment="Center" Height="30" VerticalAlignment="Top" Width="auto" Orientation="Horizontal">
+            <Button x:Name="btnFilm" Content="Film"  Background="LightPink" Foreground="Black" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnFilm_Click"/>
+            <Button x:Name="btnHranaIPice" Content="HranaIPice" Background="LightPink" Foreground="Black" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnHranaIPice_Click"/>
+            <Button x:Name="btnKarta" Content="Karta" Background="LightPink" Foreground="Black"  HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnKarta_Click"/>
+            <Button x:Name="btnKorisnik" Content="Korisnik" Background="LightPink" Foreground="Black" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnKorisnik_Click"/>
+            <Button x:Name="btnMusterija" Content="Musterija" Background="LightPink" Foreground="Black" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnMusterija_Click"/>
+            <Button x:Name="btnRacun" Content="Racun" Background="LightPink" Foreground="Black" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnRacun_Click"/>
+            <Button x:Name="btnRezervacija" Content="Rezervacija" Background="LightPink" Foreground="Black" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnRezervacija_Click"/>
+            <Button x:Name="btnSala" Content="Sala" Background="LightPink" Foreground="Black" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnSala_Click"/>
+            <Button x:Name="btnSalaFilm2" Content="SalaFilm2" Background="LightPink" Foreground="Black" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnSalaFilm2_Click"/>
+           
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" Height="30"  VerticalAlignment="Top" Width="415" Orientation="Horizontal" Margin="0,404,0,0">
+            <Button x:Name="btnDodaj" Content="Dodaj" Background="HotPink" Foreground="Black" Width="150" Click="btnDodaj_Click"/>
+            <Button x:Name="btnIzmeni" Content="Izmeni" Background="HotPink" Foreground="Black" Width="150" Click="btnIzmeni_Click"/>
+            <Button x:Name="btnObrisi" Content="Obriši"  Background="HotPink" Foreground="Black" Width="120" Click="btnObrisi_Click"/>
+
+        </StackPanel>
+    </Grid>
+
+</Window>
